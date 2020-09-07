@@ -18,7 +18,7 @@ $conn = db__connect("yulu");
 
 $words = db__getData($conn, "yulu", "lang", $lang);
 
-$rand = rand(0, count($words));
+$rand = rand(0, count($words) - 1);
 
 
 echo $words[$rand]['words'];
